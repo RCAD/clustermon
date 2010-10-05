@@ -47,3 +47,9 @@ Application Build Draft
 			- credetntials feeded through command line
 		- Tmp folder access
 			- command and script output retireval when not possible to output to python main directly
+			
+	Research on authentication and credential passing
+		examples:
+			runas /noprofile /user:domain\user "cmd /k powershell.exe add-pssnapin microsoft.hpc; get-hpcmember -scheduler masternode"
+			Enter the password for domain\user:
+			Attempting to start cmd /k powershell.exe add-pssnapin microsoft.hpc; get-hpcmember -scheduler masternode as user "domain\user" ...
