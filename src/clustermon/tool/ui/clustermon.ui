@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClusterMon</class>
+ <widget class="QMainWindow" name="ClusterMon">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>766</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ClusterMon</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>ClusterMonIco.gif</normaloff>ClusterMonIco.gif</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="box_output">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>781</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Output</string>
+    </property>
+    <widget class="QTextBrowser" name="field_output">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>761</width>
+       <height>341</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="box_customReport">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Custom Report Options</string>
+    </property>
+    <widget class="QGroupBox" name="box_reportContent">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>120</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Report Content</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QCheckBox" name="check_users">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Active Users</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="check_jobs">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Active Jobs</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="check_overview">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Overview</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="check_nodes">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Member Nodes</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="box_clusterChoice">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>30</y>
+       <width>521</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Choose Cluster</string>
+     </property>
+     <widget class="QRadioButton" name="rad_sgi1">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI1NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI2NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi3">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>60</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI3NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi4">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>80</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI4NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi8">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>80</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI8NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi7">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>60</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI7NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi5">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>20</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI5NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi6">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>40</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI6NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi12">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>80</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI12NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi11">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>60</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI11NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi9">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>20</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI9NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi10">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>40</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI01NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi16">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>80</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI16NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi15">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>60</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI15NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi13">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>20</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI13NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_sgi14">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>40</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SGI14NODE1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_mgr">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ClusterMgr-A</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_master">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>masternode</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="button_select">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>40</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Select All</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_deselect">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>110</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Deselect All</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="box_generate">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>781</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Generate Report</string>
+    </property>
+    <widget class="QPushButton" name="button_browse">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>90</y>
+       <width>51</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Browse</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="check_saveToFile">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>90</y>
+       <width>111</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Save report to file</string>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="button_customReport">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string extracomment="All Clusters, all available information."/>
+     </property>
+     <property name="text">
+      <string>Custom Report</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="field_filename">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>90</y>
+       <width>341</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="button_compReport">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string extracomment="All Clusters, all available information."/>
+     </property>
+     <property name="text">
+      <string>Comprehensive Report</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionProvide_credentials"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionProvide_credentials">
+   <property name="text">
+    <string>Provide credentials</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::QuitRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_select</sender>
+   <signal>clicked()</signal>
+   <receiver>ClusterMon</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>761</x>
+     <y>78</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>795</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_deselect</sender>
+   <signal>clicked()</signal>
+   <receiver>ClusterMon</receiver>
+   <slot>deselectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>753</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>795</x>
+     <y>153</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_customReport</sender>
+   <signal>clicked()</signal>
+   <receiver>ClusterMon</receiver>
+   <slot>custom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>776</x>
+     <y>236</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>795</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_compReport</sender>
+   <signal>clicked()</signal>
+   <receiver>ClusterMon</receiver>
+   <slot>comprehensive()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>764</x>
+     <y>287</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>794</x>
+     <y>283</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_browse</sender>
+   <signal>clicked()</signal>
+   <receiver>ClusterMon</receiver>
+   <slot>browse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>499</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>795</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>comprehensive()</slot>
+  <slot>selectAll()</slot>
+  <slot>deselectAll()</slot>
+  <slot>custom()</slot>
+  <slot>browse()</slot>
+ </slots>
+</ui>
