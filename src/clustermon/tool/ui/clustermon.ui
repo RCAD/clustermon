@@ -163,6 +163,9 @@
       <property name="text">
        <string>SGI1NODE1</string>
       </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi2">
       <property name="geometry">
@@ -175,6 +178,9 @@
       </property>
       <property name="text">
        <string>SGI2NODE1</string>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi3">
@@ -189,6 +195,9 @@
       <property name="text">
        <string>SGI3NODE1</string>
       </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi4">
       <property name="geometry">
@@ -201,6 +210,9 @@
       </property>
       <property name="text">
        <string>SGI4NODE1</string>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi8">
@@ -215,6 +227,9 @@
       <property name="text">
        <string>SGI8NODE1</string>
       </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi7">
       <property name="geometry">
@@ -227,6 +242,9 @@
       </property>
       <property name="text">
        <string>SGI7NODE1</string>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi5">
@@ -241,6 +259,9 @@
       <property name="text">
        <string>SGI5NODE1</string>
       </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi6">
       <property name="geometry">
@@ -253,6 +274,9 @@
       </property>
       <property name="text">
        <string>SGI6NODE1</string>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi12">
@@ -267,6 +291,9 @@
       <property name="text">
        <string>SGI12NODE1</string>
       </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi11">
       <property name="geometry">
@@ -279,6 +306,9 @@
       </property>
       <property name="text">
        <string>SGI11NODE1</string>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi9">
@@ -293,6 +323,9 @@
       <property name="text">
        <string>SGI9NODE1</string>
       </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi10">
       <property name="geometry">
@@ -305,6 +338,9 @@
       </property>
       <property name="text">
        <string>SGI01NODE1</string>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi16">
@@ -319,6 +355,9 @@
       <property name="text">
        <string>SGI16NODE1</string>
       </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi15">
       <property name="geometry">
@@ -331,6 +370,9 @@
       </property>
       <property name="text">
        <string>SGI15NODE1</string>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi13">
@@ -345,6 +387,9 @@
       <property name="text">
        <string>SGI13NODE1</string>
       </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
      </widget>
      <widget class="QRadioButton" name="rad_sgi14">
       <property name="geometry">
@@ -358,6 +403,9 @@
       <property name="text">
        <string>SGI14NODE1</string>
       </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
      </widget>
      <widget class="QRadioButton" name="rad_mgr">
       <property name="geometry">
@@ -370,6 +418,9 @@
       </property>
       <property name="text">
        <string>ClusterMgr-A</string>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QRadioButton" name="rad_master">
@@ -386,6 +437,9 @@
       </property>
       <property name="checked">
        <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
       </property>
      </widget>
     </widget>
